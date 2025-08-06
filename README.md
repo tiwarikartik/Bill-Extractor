@@ -35,7 +35,7 @@ This project is an AI-powered bill extraction tool that leverages the capabiliti
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/bill-extractor.git
+    git clone https://github.com/tiwarikartik/bill-extractor.git
     cd bill-extractor
     ```
 
