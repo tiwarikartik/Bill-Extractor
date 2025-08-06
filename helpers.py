@@ -28,7 +28,7 @@ def extracted_data(pages_data):
     {{"Invoice ID": 12345, "Description": "Service provided", "Amount": 1000, "Date": "2023-01-01", "Due Date": "2023-02-01", "Bill For": "Client Name", "Terms": "Pay this now"}}"""
     
     prompt_template = PromptTemplate(input_variables=["pages"], template=template)
-    llm = ChatGoogleGenerativeAI(model="models/gemini-1.5-flash", temperature=0.0)
+    llm = ChatGoogleGenerativeAI(model="models/gemini-2.5-flash", temperature=0.0)
     full_response = llm.invoke(prompt_template.format(pages=pages_data))
     print(full_response)
     return full_response
@@ -79,4 +79,5 @@ def create_docs(user_pdf_list):
         
         print("Data extracted and added to DataFrame.")
         
+
     return df
